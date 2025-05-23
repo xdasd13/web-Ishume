@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishume Productora - Capturamos tus momentos especiales</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <style>
+      
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link
+      class="imagnes-icon"
+      rel="icon"
+      href="..//img/icon-is.png"
+      type="image/png"
+    />
+</head>
+<body>
+    <!-- Cursor personalizado -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Preloader -->
+    <div class="loader">
+        <div class="loader-content">ISHUME</div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">ISHUME</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#acerca">Acerca</a></li>
+                <li><a href="../servicios/servicio.html">Servicios</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="../Cotizar/cotizar.html">Cotizar</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Collage de imágenes -->
+<!-- Collage de imágenes con animación mejorada -->
+<section class="collage" id="inicio">
+    <div class="collage-overlay"></div>
+    
+    <!-- Video background option -->
+    <video class="background-video" autoplay muted loop>
+        <source src="./video/presentaicon.mp4" type="video/mp4">
+        <!-- Fallback para navegadores que no soportan video -->
+    </video>
+    
+    
+    
+    <div class="moving-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+    </div>
+    
+    <div class="collage-text">
+        <h1 class="text-reveal">ISHUME PRODUCTORA</h1>
+        <p class="text-fade-in">Capturamos la esencia de tus momentos especiales con un estilo único y creativo. Fotografía y video para bodas, quinceañeras, graduaciones y eventos sociales.</p>
+        <a href="#contacto" class="cta-button pulse-button">Contáctanos</a>
+    </div>
+</section>
+    <!-- Acerca de nosotros -->
+<section class="about" id="acerca">
+    <div class="about-image"></div>
+    <div class="about-text">
+        <h2 class="section-title">Acerca de Nosotros</h2>
+        <h3>Capturando historias desde 2022</h3>
+        <p>En Ishume Productora no solo tomamos fotos y videos, creamos experiencias visuales únicas que permiten revivir tus momentos más especiales con la misma intensidad emocional años después.</p>
+        <p>Nuestro equipo de profesionales apasionados por la fotografía y el video trabaja con un enfoque artístico y personalizado para cada cliente, capturando la esencia de cada momento con un estilo distintivo y contemporáneo.</p>
+        <p>Utilizamos tecnología de última generación combinada con técnicas cinematográficas para crear contenido visual de alta calidad que se convierte en un tesoro para toda la vida.</p>
+        
+        <div class="text-to-speech">
+            <button id="ttsButton" class="tts-button">
+                <span class="tts-icon">🔊</span>
+                <span class="tts-play-text">Escuchar</span>
+                <span class="tts-pause-text">Pausar</span>
+            </button>
+            <div class="tts-controls">
+                <div class="tts-volume-control">
+                    <label for="ttsVolume">Volumen:</label>
+                    <input type="range" id="ttsVolume" min="0" max="1" step="0.1" value="0.8">
+                </div>
+                <div class="tts-speed-control">
+                    <label for="ttsRate">Velocidad:</label>
+                    <input type="range" id="ttsRate" min="0.5" max="2" step="0.1" value="1">
+                </div>
+                <select id="ttsVoice" class="tts-voice-select">
+                    <option value="">Seleccionar voz</option>
+                </select>
+            </div>
+            <div id="ttsProgress" class="tts-progress">
+                <div id="ttsProgressBar" class="tts-progress-bar"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Servicios -->
+    <section class="services" id="servicios">
+        <h2 class="section-title">Nuestros Servicios</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-camera"></i></div>
+                <h3 class="service-title">Fotografía de Bodas</h3>
+                <p class="service-description">Capturamos cada detalle y emoción de tu día especial, desde los preparativos hasta el último baile, creando un álbum que cuenta la historia completa de tu boda.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-video"></i></div>
+                <h3 class="service-title">Video de Quinceañeras</h3>
+                <p class="service-description">Producimos videos cinematográficos que transforman esta celebración tradicional en una experiencia visual emocionante y moderna.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-birthday-cake"></i></div>
+                <h3 class="service-title">Fotografía de Cumpleaños</h3>
+                <p class="service-description">Documentamos la alegría y diversión de tus celebraciones con un enfoque natural y espontáneo que captura los momentos más auténticos.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-graduation-cap"></i></div>
+                <h3 class="service-title">Graduaciones</h3>
+                <p class="service-description">Inmortalizamos este hito académico con fotografías y videos profesionales que reflejan el orgullo y la satisfacción del logro alcanzado.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-glass-cheers"></i></div>
+                <h3 class="service-title">Eventos Corporativos</h3>
+                <p class="service-description">Brindamos cobertura completa para lanzamientos, conferencias y celebraciones empresariales con un enfoque profesional y discreto.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-film"></i></div>
+                <h3 class="service-title">Sesiones Personalizadas</h3>
+                <p class="service-description">Creamos conceptos únicos para sesiones individuales o familiares que reflejan tu personalidad y estilo en locaciones especiales.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section class="gallery" id="galeria">
+        <h2 class="section-title">Nuestra Galería</h2>
+        <div class="gallery-filter">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="bodas">Bodas</button>
+            <button class="filter-btn" data-filter="quinceañeras">Quinceañeras</button>
+            <button class="filter-btn" data-filter="graduaciones">Graduaciones</button>
+            <button class="filter-btn" data-filter="cumpleaños">Cumpleaños</button>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item" data-category="bodas">
+                <img src="./image/galeriaBoda1.jpg" alt="Fotografía de boda" class="gallery-img">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Boda Martínez</h3>
+                    <p class="gallery-category">Bodas</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="quinceañeras">
+                <img src="./image/galeriaQuince1.jpg" alt="Fotografía de quinceañera" class="gallery-img">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Quinceañera de Sofía</h3>
+                    <p class="gallery-category">Quinceañeras</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="graduaciones">
+                <img src="./image/galeriaGradua1.jpg" alt="Fotografía de graduación" class="gallery-img">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Graduación Universidad Nacional</h3>
+                    <p class="gallery-category">Graduaciones</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="cumpleaños">
+                <img src="./image/galeriaCumple1.jpg" alt="Fotografía de cumpleaños" class="gallery-img">
+                <div class="gallery-overlay<h3 class="gallery-title">Fiesta de cumpleaños infantil</h3>
+                    <p class="gallery-category">Cumpleaños</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="bodas">
+                <img src="./image/galeriaBoda2.jpg" alt="Fotografía de boda" class="gallery-img">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Boda en la playa</h3>
+                    <p class="gallery-category">Bodas</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="quinceañeras">
+                <img src="./image/galeriaQuince2.jpg" alt="Fotografía de quinceañera" class="gallery-img">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Quinceañera estilo vintage</h3>
+                    <p class="gallery-category">Quinceañeras</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="graduaciones">
+                <img src="./image/galeriaGradua2.jpg" alt="Fotografía de graduación" class="gallery-img">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Graduación preparatoria</h3>
+                    <p class="gallery-category">Graduaciones</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="cumpleaños">
+                <img src="./image/galeriaCumple2.jpg" alt="Fotografía de cumpleaños" class="gallery-img">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Fiesta sorpresa 30 años</h3>
+                    <p class="gallery-category">Cumpleaños</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonials" id="testimonios">
+        <h2 class="section-title">Testimonios</h2>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <p class="testimonial-text">Ishume Productora superó todas nuestras expectativas. Las fotos de nuestra boda capturaron momentos que ni siquiera recordábamos haber vivido. El video es como una película profesional que nos emociona cada vez que lo vemos.</p>
+                <div class="testimonial-author">
+                    <img src="./image/bodaPerfil.jpg" alt="Autor del testimonio" class="author-img">
+                    <div class="author-info">
+                        <h4>Ana y Roberto</h4>
+                        <p>Boda, Febrero 2024</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">La fiesta de quince años de mi hija quedó documentada de manera extraordinaria. El enfoque artístico y la calidad del material son impresionantes. Cada foto cuenta una historia y el video nos transporta a ese día mágico.</p>
+                <div class="testimonial-author">
+                    <img src="./image/quincePerifl.jpg" alt="Autor del testimonio" class="author-img">
+                    <div class="author-info">
+                        <h4>Claudia Hernández</h4>
+                        <p>Quinceañera, Octubre 2023</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">Como organizador de eventos corporativos, he trabajado con muchos fotógrafos, pero el equipo de Ishume es excepcional. Son profesionales, discretos y entregan un material de altísima calidad. Son mi primera opción siempre.</p>
+                <div class="testimonial-author">
+                    <img src="./image/corporativoPerfil.jpg" alt="Autor del testimonio" class="author-img">
+                    <div class="author-info">
+                        <h4>Miguel Ángel Torres</h4>
+                        <p>Eventos Corporativos</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">Las fotos de mi graduación son espectaculares, capturaron la emoción y el orgullo de ese día tan importante. El servicio fue muy profesional y el resultado final superó mis expectativas por mucho.</p>
+                <div class="testimonial-author">
+                    <img src="./image/graduPerfil.jpg" alt="Autor del testimonio" class="author-img">
+                    <div class="author-info">
+                        <h4>Daniela Guzmán</h4>
+                        <p>Graduación, Diciembre 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contact" id="contacto">
+        <h2 class="section-title">Contáctanos</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>¿Listo para inmortalizar tu próximo evento?</h3>
+                <p>Cuéntanos sobre tu evento y crearemos un paquete personalizado que se ajuste perfectamente a tus necesidades y presupuesto. Estamos disponibles para responder cualquier pregunta y agendar una cita para discutir los detalles.</>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                <div>
+                    <h4>Ubicación</h4>
+                    <p>Av.Luis Massaro 791, Chincha Alta, Peru</p>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div>
+                    <h4>Teléfono</h4>
+                    <p>991 157 028</p>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                    <h4>Email</h4>
+                    <p>contacto@ishumeproductora.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" name="nombre" class="form-control" placeholder="Nombre completo" required pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]+" title="Solo se permiten letras y espacios">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="telefono" class="form-control" placeholder="Teléfono (9 dígitos)" maxlength="9" pattern="[0-9]{9}" title="Ingresa exactamente 9 dígitos">
+                </div>
+                <div class="form-group">
+                    <select name="tipoEvento" class="form-control" required>
+                        <option value="" disabled selected>Tipo de evento</option>
+                        <option value="boda">Boda</option>
+                        <option value="quinceañera">Quinceañera</option>
+                        <option value="graduacion">Graduación</option>
+                        <option value="cumpleaños">Cumpleaños</option>
+                        <option value="corporativo">Evento Corporativo</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="date" name="fecha" class="form-control" placeholder="Fecha del evento">
+                    <small style="color: #666; font-size: 0.8em;">Selecciona una fecha entre hoy y un año a futuro</small>
+                </div>
+                <div class="form-group">
+                    <textarea name="comentario" class="form-control" placeholder="Cuéntanos sobre tu evento..." required minlength="10" maxlength="500"></textarea>
+                    <small style="color: #666; font-size: 0.8em;">Mínimo 10 caracteres, máximo 500</small>
+                </div>
+                <button type="submit" class="submit-btn">Enviar mensaje</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">ISHUME</div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/people/Ishume-Productora-Audiovisual/61554959289985/" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/ishume_productora_audiovisual?igsh=YzljYTk1ODg3Zg==" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <div class="footer-links">
+                <a href="../Inicio/inicio.html">Inicio</a>
+                <a href="#acerca">Acerca</a>
+                <a href="../servicios/servicio.html">Servicios</a>
+                <a href="#galeria">Galería</a>
+                <a href="#testimonios">Testimonios</a>
+                <a href="#contacto">Contacto</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Términos y condiciones</a>
+            </div>
+            <p class="footer-copyright">© 2025 Ishume Productora. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+        <!-- Chat -->
+       <div class="chat-container">
+        <div class="chat-popup">
+            <div class="chat-header">
+                <h3><i class="fas fa-comments"></i> Chat con Ishume</h3>
+                <span class="close-chat"><i class="fas fa-times"></i></span>
+            </div>
+            <div class="chat-body">
+                <div class="chat-message message-received">
+                    ¡Hola! Soy el asistente virtual de Ishume Productora. ¿En qué puedo ayudarte hoy?
+                    <div class="chat-timestamp">Ahora</div>
+                </div>
+                <!-- Los mensajes se agregarán dinámicamente aquí -->
+            </div>
+            <div class="chat-typing">
+                <span class="typing-indicator">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                Escribiendo...
+            </div>
+            <div class="chat-footer">
+                <input type="text" class="chat-input" placeholder="Escribe tu mensaje aquí..." aria-label="Mensaje de chat">
+                <button class="send-button" aria-label="Enviar mensaje">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+        <button class="chat-button" aria-label="Abrir chat">
+            <i class="fas fa-comments"></i>
+        </button>
+    </div>
+<script src="./script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
