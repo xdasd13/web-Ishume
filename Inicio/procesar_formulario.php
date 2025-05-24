@@ -6,7 +6,7 @@ $password = '';
 $database = 'forum'; 
 
 // Número de WhatsApp al que se enviarán los mensajes (incluye código de país)
-$numero_whatsapp = '51939836897'; // Cambia esto por tu número real con código de país (51 para Perú)
+$numero_whatsapp = '51991157028'; // Cambia esto por tu número real con código de país (51 para Perú)
 
 // Inicializar array de errores
 $errores = [];
